@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.0](https://www.github.com/googleapis/java-apigee-connect/compare/v2.0.2...v2.1.0) (2021-09-24)
+
+
+### Features
+
+* Remove use of deprecated gradle command in java README ([#1196](https://www.github.com/googleapis/java-apigee-connect/issues/1196)) ([#57](https://www.github.com/googleapis/java-apigee-connect/issues/57)) ([d5696b6](https://www.github.com/googleapis/java-apigee-connect/commit/d5696b60ccd29d2998a201f23bc5afd9a12d8941))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.2.0 ([#60](https://www.github.com/googleapis/java-apigee-connect/issues/60)) ([50b9837](https://www.github.com/googleapis/java-apigee-connect/commit/50b98379dad3567d2fa88e22a885a1e3dd8d565e))
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.2.1 ([#70](https://www.github.com/googleapis/java-apigee-connect/issues/70)) ([7733844](https://www.github.com/googleapis/java-apigee-connect/commit/773384494b24195b9fce1d0c9ea5247b90b59675))
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v2.3.0 ([#74](https://www.github.com/googleapis/java-apigee-connect/issues/74)) ([36da818](https://www.github.com/googleapis/java-apigee-connect/commit/36da81836c21551f1867bc8ac53552f7851aa5f2))
+
 ### [2.0.2](https://www.github.com/googleapis/java-apigee-connect/compare/v2.0.1...v2.0.2) (2021-08-23)
 
 
