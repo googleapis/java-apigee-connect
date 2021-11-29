@@ -53,8 +53,7 @@ public final class ConnectionProto {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + ".google/cloud/apigeeconnect/v1/connecti"
-          + "on.proto\022\035google.cloud.apigeeconnect.v1\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\"~\n"
+          + ".google/cloud/apigeeconnect/v1/connection.proto\022\035google.cloud.apigeeconnect.v1\032\034google/api/annotations.proto\032\027google/api/client.proto\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\"~\n"
           + "\026ListConnectionsRequest\022=\n"
           + "\006parent\030\001 \001(\tB-\340A\002\372A\'\n"
           + "%apigeeconnect.googleapis.com/Endpoint\022\021\n"
@@ -73,8 +72,7 @@ public final class ConnectionProto {
           + "\021ConnectionService\022\302\001\n"
           + "\017ListConnections\0225.google.cloud.apigeeconnect.v1.ListConnections"
           + "Request\0326.google.cloud.apigeeconnect.v1."
-          + "ListConnectionsResponse\"@\202\323\344\223\0021\022//v1/{pa"
-          + "rent=projects/*/endpoints/*}/connections\332A\006parent\032P\312A\034apigeeconnect.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformB\270\002\n"
+          + "ListConnectionsResponse\"@\202\323\344\223\0021\022//v1/{parent=projects/*/endpoints/*}/connections\332A\006parent\032P\312A\034apigeeconnect.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformB\270\002\n"
           + "!com.google.cloud.apigeeconnect.v1B\017ConnectionProtoP\001ZJgoogle.gol"
           + "ang.org/genproto/googleapis/cloud/apigee"
           + "connect/v1;apigeeconnect\252\002\035Google.Cloud."
