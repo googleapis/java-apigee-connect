@@ -16,29 +16,26 @@
 
 package com.google.cloud.apigeeconnect.v1.samples;
 
-// [START apigeeconnect_v1_generated_connectionserviceclient_listconnections_endpointname_sync]
-import com.google.cloud.apigeeconnect.v1.Connection;
+// [START apigeeconnect_v1_generated_ConnectionService_Create_SetCredentialsProvider1_sync]
 import com.google.cloud.apigeeconnect.v1.ConnectionServiceClient;
-import com.google.cloud.apigeeconnect.v1.EndpointName;
+import com.google.cloud.apigeeconnect.v1.ConnectionServiceSettings;
 
-public class SyncListConnectionsEndpointname {
+public class SyncCreateSetCredentialsProvider1 {
 
   public static void main(String[] args) throws Exception {
-    syncListConnectionsEndpointname();
+    syncCreateSetCredentialsProvider1();
   }
 
-  public static void syncListConnectionsEndpointname() throws Exception {
+  public static void syncCreateSetCredentialsProvider1() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    try (ConnectionServiceClient connectionServiceClient = ConnectionServiceClient.create()) {
-      EndpointName parent = EndpointName.of("[PROJECT]", "[ENDPOINT]");
-      for (Connection element : connectionServiceClient.listConnections(parent).iterateAll()) {
-        // doThingsWith(element);
-      }
-    }
+    ConnectionServiceSettings connectionServiceSettings =
+        ConnectionServiceSettings.newHttpJsonBuilder().build();
+    ConnectionServiceClient connectionServiceClient =
+        ConnectionServiceClient.create(connectionServiceSettings);
   }
 }
-// [END apigeeconnect_v1_generated_connectionserviceclient_listconnections_endpointname_sync]
+// [END apigeeconnect_v1_generated_ConnectionService_Create_SetCredentialsProvider1_sync]

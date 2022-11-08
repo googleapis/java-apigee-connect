@@ -16,7 +16,7 @@
 
 package com.google.cloud.apigeeconnect.v1.samples;
 
-// [START apigeeconnect_v1_generated_connectionserviceclient_create_setcredentialsprovider_sync]
+// [START apigeeconnect_v1_generated_ConnectionService_Create_SetCredentialsProvider_sync]
 import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.cloud.apigeeconnect.v1.ConnectionServiceClient;
 import com.google.cloud.apigeeconnect.v1.ConnectionServiceSettings;
@@ -42,4 +42,4 @@ public class SyncCreateSetCredentialsProvider {
         ConnectionServiceClient.create(connectionServiceSettings);
   }
 }
-// [END apigeeconnect_v1_generated_connectionserviceclient_create_setcredentialsprovider_sync]
+// [END apigeeconnect_v1_generated_ConnectionService_Create_SetCredentialsProvider_sync]

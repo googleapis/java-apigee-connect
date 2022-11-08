@@ -16,7 +16,7 @@
 
 package com.google.cloud.apigeeconnect.v1.samples;
 
-// [START apigeeconnect_v1_generated_tetherclient_egress_async]
+// [START apigeeconnect_v1_generated_Tether_Egress_async]
 import com.google.api.gax.rpc.BidiStream;
 import com.google.cloud.apigeeconnect.v1.EgressRequest;
 import com.google.cloud.apigeeconnect.v1.EgressResponse;
@@ -56,4 +56,4 @@ public class AsyncEgress {
     }
   }
 }
-// [END apigeeconnect_v1_generated_tetherclient_egress_async]
+// [END apigeeconnect_v1_generated_Tether_Egress_async]

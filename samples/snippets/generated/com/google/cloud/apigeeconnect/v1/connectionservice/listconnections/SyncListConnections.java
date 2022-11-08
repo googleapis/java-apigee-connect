@@ -16,28 +16,35 @@
 
 package com.google.cloud.apigeeconnect.v1.samples;
 
-// [START apigeeconnect_v1_generated_tetherclient_create_setcredentialsprovider1_sync]
-import com.google.cloud.apigeeconnect.v1.TetherClient;
-import com.google.cloud.apigeeconnect.v1.TetherSettings;
+// [START apigeeconnect_v1_generated_ConnectionService_ListConnections_sync]
+import com.google.cloud.apigeeconnect.v1.Connection;
+import com.google.cloud.apigeeconnect.v1.ConnectionServiceClient;
+import com.google.cloud.apigeeconnect.v1.EndpointName;
+import com.google.cloud.apigeeconnect.v1.ListConnectionsRequest;
 
-public class SyncCreateSetCredentialsProvider1 {
+public class SyncListConnections {
 
   public static void main(String[] args) throws Exception {
-    syncCreateSetCredentialsProvider1();
+    syncListConnections();
   }
 
-  public static void syncCreateSetCredentialsProvider1() throws Exception {
+  public static void syncListConnections() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    TetherSettings tetherSettings =
-        TetherSettings.newBuilder()
-            .setTransportChannelProvider(
-                TetherSettings.defaultHttpJsonTransportProviderBuilder().build())
-            .build();
-    TetherClient tetherClient = TetherClient.create(tetherSettings);
+    try (ConnectionServiceClient connectionServiceClient = ConnectionServiceClient.create()) {
+      ListConnectionsRequest request =
+          ListConnectionsRequest.newBuilder()
+              .setParent(EndpointName.of("[PROJECT]", "[ENDPOINT]").toString())
+              .setPageSize(883849137)
+              .setPageToken("pageToken873572522")
+              .build();
+      for (Connection element : connectionServiceClient.listConnections(request).iterateAll()) {
+        // doThingsWith(element);
+      }
+    }
   }
 }
-// [END apigeeconnect_v1_generated_tetherclient_create_setcredentialsprovider1_sync]
+// [END apigeeconnect_v1_generated_ConnectionService_ListConnections_sync]

@@ -16,29 +16,25 @@
 
 package com.google.cloud.apigeeconnect.v1.samples;
 
-// [START apigeeconnect_v1_generated_tetherclient_create_setcredentialsprovider_sync]
-import com.google.api.gax.core.FixedCredentialsProvider;
+// [START apigeeconnect_v1_generated_Tether_Create_SetEndpoint_sync]
 import com.google.cloud.apigeeconnect.v1.TetherClient;
 import com.google.cloud.apigeeconnect.v1.TetherSettings;
-import com.google.cloud.apigeeconnect.v1.myCredentials;
+import com.google.cloud.apigeeconnect.v1.myEndpoint;
 
-public class SyncCreateSetCredentialsProvider {
+public class SyncCreateSetEndpoint {
 
   public static void main(String[] args) throws Exception {
-    syncCreateSetCredentialsProvider();
+    syncCreateSetEndpoint();
   }
 
-  public static void syncCreateSetCredentialsProvider() throws Exception {
+  public static void syncCreateSetEndpoint() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    TetherSettings tetherSettings =
-        TetherSettings.newBuilder()
-            .setCredentialsProvider(FixedCredentialsProvider.create(myCredentials))
-            .build();
+    TetherSettings tetherSettings = TetherSettings.newBuilder().setEndpoint(myEndpoint).build();
     TetherClient tetherClient = TetherClient.create(tetherSettings);
   }
 }
-// [END apigeeconnect_v1_generated_tetherclient_create_setcredentialsprovider_sync]
+// [END apigeeconnect_v1_generated_Tether_Create_SetEndpoint_sync]

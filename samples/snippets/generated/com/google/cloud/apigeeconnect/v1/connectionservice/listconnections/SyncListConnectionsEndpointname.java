@@ -16,25 +16,29 @@
 
 package com.google.cloud.apigeeconnect.v1.samples;
 
-// [START apigeeconnect_v1_generated_tetherclient_create_setendpoint_sync]
-import com.google.cloud.apigeeconnect.v1.TetherClient;
-import com.google.cloud.apigeeconnect.v1.TetherSettings;
-import com.google.cloud.apigeeconnect.v1.myEndpoint;
+// [START apigeeconnect_v1_generated_ConnectionService_ListConnections_Endpointname_sync]
+import com.google.cloud.apigeeconnect.v1.Connection;
+import com.google.cloud.apigeeconnect.v1.ConnectionServiceClient;
+import com.google.cloud.apigeeconnect.v1.EndpointName;
 
-public class SyncCreateSetEndpoint {
+public class SyncListConnectionsEndpointname {
 
   public static void main(String[] args) throws Exception {
-    syncCreateSetEndpoint();
+    syncListConnectionsEndpointname();
   }
 
-  public static void syncCreateSetEndpoint() throws Exception {
+  public static void syncListConnectionsEndpointname() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    TetherSettings tetherSettings = TetherSettings.newBuilder().setEndpoint(myEndpoint).build();
-    TetherClient tetherClient = TetherClient.create(tetherSettings);
+    try (ConnectionServiceClient connectionServiceClient = ConnectionServiceClient.create()) {
+      EndpointName parent = EndpointName.of("[PROJECT]", "[ENDPOINT]");
+      for (Connection element : connectionServiceClient.listConnections(parent).iterateAll()) {
+        // doThingsWith(element);
+      }
+    }
   }
 }
-// [END apigeeconnect_v1_generated_tetherclient_create_setendpoint_sync]
+// [END apigeeconnect_v1_generated_ConnectionService_ListConnections_Endpointname_sync]

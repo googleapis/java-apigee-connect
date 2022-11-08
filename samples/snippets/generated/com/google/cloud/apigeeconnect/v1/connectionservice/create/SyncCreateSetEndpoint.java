@@ -16,39 +16,27 @@
 
 package com.google.cloud.apigeeconnect.v1.samples;
 
-// [START apigeeconnect_v1_generated_connectionserviceclient_listconnections_async]
-import com.google.api.core.ApiFuture;
-import com.google.cloud.apigeeconnect.v1.Connection;
+// [START apigeeconnect_v1_generated_ConnectionService_Create_SetEndpoint_sync]
 import com.google.cloud.apigeeconnect.v1.ConnectionServiceClient;
-import com.google.cloud.apigeeconnect.v1.EndpointName;
-import com.google.cloud.apigeeconnect.v1.ListConnectionsRequest;
+import com.google.cloud.apigeeconnect.v1.ConnectionServiceSettings;
+import com.google.cloud.apigeeconnect.v1.myEndpoint;
 
-public class AsyncListConnections {
+public class SyncCreateSetEndpoint {
 
   public static void main(String[] args) throws Exception {
-    asyncListConnections();
+    syncCreateSetEndpoint();
   }
 
-  public static void asyncListConnections() throws Exception {
+  public static void syncCreateSetEndpoint() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    try (ConnectionServiceClient connectionServiceClient = ConnectionServiceClient.create()) {
-      ListConnectionsRequest request =
-          ListConnectionsRequest.newBuilder()
-              .setParent(EndpointName.of("[PROJECT]", "[ENDPOINT]").toString())
-              .setPageSize(883849137)
-              .setPageToken("pageToken873572522")
-              .build();
-      ApiFuture<Connection> future =
-          connectionServiceClient.listConnectionsPagedCallable().futureCall(request);
-      // Do something.
-      for (Connection element : future.get().iterateAll()) {
-        // doThingsWith(element);
-      }
-    }
+    ConnectionServiceSettings connectionServiceSettings =
+        ConnectionServiceSettings.newBuilder().setEndpoint(myEndpoint).build();
+    ConnectionServiceClient connectionServiceClient =
+        ConnectionServiceClient.create(connectionServiceSettings);
   }
 }
-// [END apigeeconnect_v1_generated_connectionserviceclient_listconnections_async]
+// [END apigeeconnect_v1_generated_ConnectionService_Create_SetEndpoint_sync]

@@ -16,7 +16,7 @@
 
 package com.google.cloud.apigeeconnect.v1.samples;
 
-// [START apigeeconnect_v1_generated_connectionserviceclient_listconnections_paged_async]
+// [START apigeeconnect_v1_generated_ConnectionService_ListConnections_Paged_async]
 import com.google.cloud.apigeeconnect.v1.Connection;
 import com.google.cloud.apigeeconnect.v1.ConnectionServiceClient;
 import com.google.cloud.apigeeconnect.v1.EndpointName;
@@ -59,4 +59,4 @@ public class AsyncListConnectionsPaged {
     }
   }
 }
-// [END apigeeconnect_v1_generated_connectionserviceclient_listconnections_paged_async]
+// [END apigeeconnect_v1_generated_ConnectionService_ListConnections_Paged_async]
